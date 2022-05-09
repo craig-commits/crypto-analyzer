@@ -9,8 +9,13 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { CoinsComponent } from './coins/coins.component';
 import { CoinDetailsComponent } from './coin-details/coin-details.component';
 
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatSelectModule} from '@angular/material/select';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSelectModule } from '@angular/material/select';
+import { MatTabsModule } from '@angular/material/tabs';
+import { TrendingComponent } from './trending/trending.component';
+import { CryptoListComponent } from './crypto-list/crypto-list.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -20,14 +25,18 @@ import {MatSelectModule} from '@angular/material/select';
     HeaderComponent,
     FooterComponent,
     CoinsComponent,
-    CoinDetailsComponent
+    CoinDetailsComponent,
+    TrendingComponent,
+    CryptoListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatSelectModule
+    MatSelectModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
